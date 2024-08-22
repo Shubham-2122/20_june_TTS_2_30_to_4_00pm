@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        // fetch('',{
+
+        // })
+
+        // view
+        async function View(){
+            const res =await axios.get('https://660d95e36ddfa2943b34c530.mockapi.io/data')
+            console.log(res)
+            console.log(res.data)
+            res.data.map((data)=>{
+                console.log(data)
+                document.write(`<p>id:${data.id} , name:- ${data.name}</p>`)
+            })
+        }
+
+        // View()
+
+        // post
+
+        let person = {name:"Rajesh",Coruse:"Front-end",city:"Ahemdabad",state:"Gujart"}
+
+        async function Create(){
+            const res = await axios.post('https://660d95e36ddfa2943b34c530.mockapi.io/data',person)
+            console.log(res.data)
+        }
+        // Create()
+
+
+        // delete 
+        async function delete1(){
+            const res = await axios.delete("https://660d95e36ddfa2943b34c530.mockapi.io/data/19")
+            console.log(res.data)
+        }
+
+        // delete1()
+
+
+        // update = : get + post :- put/patch
+
+        let person1 = {id:18,name:"janvai",Coruse:"Full-stack",city:"surat"}
+
+        async function update(){
+            const res =await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/data/${person1.id}`,person1);
+            console.log(res.data)
+            View()
+        }
+        update()
+
+    </script>
+</body>
+</html>

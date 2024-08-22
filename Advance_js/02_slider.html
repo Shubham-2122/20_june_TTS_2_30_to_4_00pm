@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="/img/n1.jpg" id="n1" height="100%" width="100%" alt="">
+    </div>
+    <button onclick="slider()">click me</button>
+
+    <script>
+        img_tag = document.getElementById("n1");
+        console.log(img_tag)
+        console.log(img_tag.src)
+
+        function slider()
+        {
+            if(img_tag.src.match("/img/n1.jpg")){
+                img_tag.src ="/img/n2.jpg";
+            }
+            else if(img_tag.src.match("/img/n2.jpg")){
+                img_tag.src ="/img/n3.jpg";
+            }
+            else if(img_tag.src.match("/img/n3.jpg")){
+                img_tag.src ="/img/n4.jpg";
+            }
+            else{
+                img_tag.src ="/img/n1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

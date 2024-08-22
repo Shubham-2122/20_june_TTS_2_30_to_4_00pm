@@ -1,0 +1,24 @@
+@mixin theme($bg-color:red)
+{
+    border: 20px solid $bg-color;
+    background-color: lightgreen;
+    color: $bg-color;
+}
+
+.main{
+    height: 200px;
+    width: 200px;
+    @include theme;
+}
+.main2{
+    height: 200px;
+    @include theme(lightcoral);
+    color: black;
+
+}
+.main3
+{
+    height: 300px;
+    width: 300px;
+    @include theme;
+}

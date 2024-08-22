@@ -1,0 +1,26 @@
+// .p-style(@size) when(@size >= 20px){
+//     background-color: red;
+//     font-size: @size;
+// }
+@color:green;
+@blue:blue;
+
+.p-style(@size) when(@size <= 20px){
+    background-color: blue;
+     font-size: @size;
+ }
+
+// .p-style()
+
+p{
+    .p-style(19px);
+
+}
+
+.main{
+    height: 200px;
+    width: 200px;
+    background-color: @color;
+    color: if((iscolor(@blue)),@blue,yellow);
+    padding: if((2 < 1), 20px, 40px);
+}

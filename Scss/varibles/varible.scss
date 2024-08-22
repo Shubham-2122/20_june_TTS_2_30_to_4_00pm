@@ -1,0 +1,15 @@
+$bg-color:red;
+$color:blue;
+$h1-colr:green;
+$size: 50px;
+
+p{
+    background-color: $bg-color;
+    color: $color;
+    font-size: $size;
+}
+h1{
+    background-color: $color;
+    color: wheat;
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch() :-  data view a s body :- promise :- object  -->
+
+    <!-- fetch('url',{
+        method:"get"
+    }) -->
+    <!-- res text conervt object/ array -->
+    <!-- .then() -->
+    <!-- print funcation/ print body direct -->
+    <!-- .then() -->
+
+    <h1 id="demo"></h1>
+
+    <button onclick="handleclick()">click me</button>
+
+
+    <script>
+       function handleclick(){
+        fetch('demo.txt',{
+            // defults
+            method:'GET'
+        })
+        .then((res)=>{
+            // convrt text file object
+            return res.text()
+        })
+        .then((res)=>{
+            console.log(res)
+            document.getElementById("demo").innerHTML = res
+        })
+       }
+
+    </script>
+
+
+</body>
+</html>

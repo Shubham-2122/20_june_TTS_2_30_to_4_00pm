@@ -1,0 +1,17 @@
+.btn {
+  background-color: lightcoral;
+}
+.btn:hover {
+  background-color: blue;
+  color: lightcoral;
+}
+h1 {
+  background: red;
+}
+#btn {
+  background-color: lightcoral;
+}
+#btn:hover {
+  background-color: blue;
+  color: lightcoral;
+}

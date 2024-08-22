@@ -1,0 +1,14 @@
+$font:100px;
+
+p{
+    font-size: $font - 50px;
+}
+h1{
+    font-size: $font + 20px;
+}
+
+.main{
+    height: $font * 2;
+    width: $font * 2;
+    background-color: red;
+}

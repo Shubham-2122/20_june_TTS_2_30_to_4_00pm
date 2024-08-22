@@ -1,0 +1,11 @@
+p {
+  background-color: blue;
+  font-size: 19px;
+}
+.main {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  color: blue;
+  padding: 40px;
+}

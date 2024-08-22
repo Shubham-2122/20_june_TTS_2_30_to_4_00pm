@@ -1,0 +1,40 @@
+%col{
+    height: 50px;
+    width: 150px;
+    border: 2px solid red;
+}
+
+%felex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    @extend %col;
+}
+
+button{
+    @extend %col;
+    border: 5px solid navy;
+}
+
+.main2{
+    @extend %felex;
+}
+
+.box{
+    width: 25%;
+    height: 200px;
+    border: 2px solid;
+}
+
+.main3{
+    @extend %felex;
+    justify-content: space-between;
+    .box1{
+        @extend %col;
+        width: 200px;
+        height: 200px;
+    }
+}

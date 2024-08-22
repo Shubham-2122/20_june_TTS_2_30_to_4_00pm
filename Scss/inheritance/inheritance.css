@@ -1,0 +1,29 @@
+.main3 .box1, button, .main {
+  height: 50px;
+  width: 150px;
+  border: 2px solid red;
+}
+
+.main3, .main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 5px solid navy;
+}
+
+.box {
+  width: 25%;
+  height: 200px;
+  border: 2px solid;
+}
+
+.main3 {
+  justify-content: space-between;
+}
+.main3 .box1 {
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=inheritance.css.map */

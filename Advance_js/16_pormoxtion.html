@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- poli :- function overloading(complie) and function overring(run) -->
+
+    <!-- overloding :- function name same and deffent para :- same class (not loading) -->
+    <!-- overring :- function name samme and deffent para :- deffent class (inheritance) -->
+
+
+    <script>
+
+        // function overloading
+        // class abc{
+        //     display = function(a) {
+        //         console.log("name=>",a)            
+        //     }
+        //     display = function(a,b){
+        //         console.log("sum =>",a+b)
+        //     }
+        // }
+
+        // var obj = new abc
+        // obj.display(12,25)
+
+        // function overring
+        class a{
+            display(){
+                console.log("x value")
+            }
+        } 
+        class b extends a{
+            display(){
+                console.log("y value")
+            }
+        }
+        class c extends b{
+            display(){
+                console.log("z value")
+            }
+        }
+
+        // var obj1 = new c;
+        // obj1.display();
+
+        var arra = [new a(),new b(),new c()]
+        arra.forEach((value)=>value.display())
+
+
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+.nav li {
+  display: inline-block;
+  background-color: #48e048;
+  padding: 10px 20px;
+}
+.nav li a {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav h1 {
+  background-color: aqua;
+}
+.foot {
+  list-style: none;
+}
+.foot li {
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+}
+.foot li a {
+  color: #48e048;
+  text-decoration: none;
+  font-size: 30px;
+}
+.sec1 {
+  display: flex;
+}
+@media only screen and (max-width: 576px) {
+  .sec1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.sec1 .col1 {
+  width: 25%;
+  height: 300px;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 576px) {
+  .sec1 .col1 {
+    width: 50%;
+  }
+}

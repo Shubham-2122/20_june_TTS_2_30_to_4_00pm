@@ -1,0 +1,23 @@
+.main {
+  height: 200px;
+  width: 200px;
+  border: 20px solid red;
+  background-color: lightgreen;
+  color: red;
+}
+
+.main2 {
+  height: 200px;
+  border: 20px solid lightcoral;
+  background-color: lightgreen;
+  color: lightcoral;
+  color: black;
+}
+
+.main3 {
+  height: 300px;
+  width: 300px;
+  border: 20px solid red;
+  background-color: lightgreen;
+  color: red;
+}/*# sourceMappingURL=mixins.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+
+    <input placeholder="Enter your name"  type="text">
+    <span></span>
+    <script>
+        h1_tag= document.getElementById("h1")
+        console.log(h1_tag)   
+        h1_tag.innerHTML = "hello h1 tag";
+        
+        document.write("hello js");
+
+        // 3 type 
+        // 1) var decl,re-decl,re-ass allow(global)
+        // 2) let decl,re-ass allow(local)
+        // 3) const decl allow (function,unique)
+
+        // datatype :- primitive(string,number,symbol,undefined,null,bigInt,boolen) and non-primivite (array,object)
+
+        // coditional statement (if,if_else , elder,switch)
+        // loop structur (for,while,do while)
+        // function :- user name-() , predefined (),aleret()
+        //  without para:-value chnaeg , with para(value) :- value change 
+
+
+        var a=10,b=10
+        function add()
+        {
+            var sum = a + b
+            document.write("sum=>",sum,"<br>")
+        }
+        add()
+        add()
+
+        // with para
+        function sum(a,b)
+        {
+            var sum = a + b;
+            document.write("sum => ",sum,"<br>")
+        }
+        sum(20,30)
+        sum(10,10)
+
+
+        // adavance arrow 
+        const sub1=(a,b)=>{
+            return  a - b ;
+            // document.write(sub)
+            
+        }
+        sub1(30,10)
+        document.write(sub1(2,34))
+
+        
+
+        
+    </script>
+</body>
+</html>

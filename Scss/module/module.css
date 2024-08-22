@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(169, 231, 24);
+  color: rgb(16, 193, 206);
+}
+
+p {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+
+h2 {
+  background-color: lightcoral;
+  color: rgb(235, 220, 15);
+}/*# sourceMappingURL=module.css.map */

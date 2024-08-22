@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- syntax :-
+    let jsondata = [{
+        "id":"1",
+        "name":"rajesh",
+        "course":"Front-end"
+    }]
+
+    let object = [{
+        id:"1",
+        name:"rajesh",
+        course:"front-end"
+    }] -->
+
+    <script>
+        let jsondata = `[
+        {
+            "id":1,
+            "name":"Rajesh",
+            "course":"front-end"
+        },
+        {
+            "id":2,
+            "name":"Diya",
+            "course":"full-stack"
+        },
+         {
+            "id":3,
+            "name":"Arun",
+            "course":"MERN-stack"
+        }
+        ]`
+
+
+        console.log(jsondata)
+
+
+        let obj = JSON.parse(jsondata)
+        console.log(obj)
+        for(let data of obj){
+            document.write(`<p>id:-${data.id} , name:- ${data.name}, course : ${data.course} </p>`)
+        }
+
+
+
+        let obj1 =[
+            {
+            id:1,
+            name:"Rajesh",
+            course:"front-end"
+        },
+        {
+            id:2,
+            name:"Diya",
+            course:"full-stack"
+        },
+         {
+            id:3,
+            name:"Arun",
+            course:"MERN-stack"
+        }
+        ]
+
+        console.log(obj1)
+
+        let datajson = JSON.stringify(obj1)
+
+        console.log(datajson)
+
+    </script>
+
+
+</body>
+</html>

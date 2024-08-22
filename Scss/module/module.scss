@@ -1,0 +1,14 @@
+@use 'base';
+@use 'boder';
+
+
+p{
+    background-color: base.$name;
+    font-size: boder.$fons-size - 20px;
+}
+
+h2{
+    background-color: lightcoral;
+    color: rgb(235, 220, 15);
+    
+}

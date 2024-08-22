@@ -1,0 +1,31 @@
+#border()
+{
+    .button{
+        background-color: lightcoral;
+        &:hover{
+            background-color: blue;
+            color: lightcoral;
+        }
+    }
+    .button1{
+        background-color: rgb(206, 20, 20);
+        &:hover{
+            background-color: rgb(179, 226, 10);
+            color: rgb(223, 53, 11);
+        }
+    }
+    .h1{
+        background: red;
+    }
+
+}
+
+.btn{
+    #border.button();
+}
+h1{
+    #border.h1();
+}
+#btn{
+    #border.button();
+}

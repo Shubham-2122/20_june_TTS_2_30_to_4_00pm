@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1) sigle :-  A - B
+    2) multiple :- A  B :- A - c :- B:- c (js not posibele)
+    3) multi level :- A - B - c 
+    4) hychical  :- A - B :- A - C
+    5) hybrid :-  single ,multi , hychical -->
+
+    <script>
+        // class a{
+        //     a = function(){
+        //         document.write("A pernet class")
+        //     }
+        // }
+        // class b extends a{
+        //     b =function(){
+        //         document.write("B child class")
+        //     }
+        // }
+
+        // let ab = new b
+        // ab.b()
+        // ab.a() 
+
+
+
+
+        // class a{
+        //     a = function(){
+        //         document.write("A pernet class")
+        //     }
+        // }
+        // class b extends a{
+        //     b =function(){
+        //         document.write("B child class")
+        //     }
+        // }
+
+        // class c extends b{
+        //     c = function(){
+        //         document.write("C child class")
+        //     }
+        // }
+
+        // ob = new c
+        // ob.a()
+        // ob.b()
+        // ob.c()
+
+
+
+        class A{
+            add= function (a,b) {
+                document.write("sum=>",a+b)
+            }
+        }
+        class B extends A{
+            sub = function (a,b) {
+                document.write("sub=>",a-b)
+            }
+        }
+
+        class C extends A {
+            mul= function (a,b) {
+                document.write("mul=>",a*b)
+            }
+        }
+
+        var ob = new B 
+        ob.add()
+
+        var obj1 = new C
+        obj1.add()
+
+
+    </script>
+
+</body>
+</html>

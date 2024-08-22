@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- constor :- same value perfrom class constrors :- new multiplt function automaticty () only one -->
+
+
+    <script>
+        class abc{
+            sum = function() {
+                document.write("hello this sum")
+            }
+            sub = function(a,b){
+                document.write("hello",a-b)
+            }
+            mul = function(){
+                document.write("hello this mul")
+            }
+            // highet
+            constructor(){
+                document.write("hello constructor auto")
+            }
+            constructor(){
+                console.log("heloo constror")
+            }
+        }
+
+        var obj = new abc
+        obj.mul()
+        obj.sub(50,20)
+    </script>
+</body>
+</html>

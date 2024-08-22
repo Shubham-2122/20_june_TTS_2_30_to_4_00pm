@@ -1,0 +1,14 @@
+.border(@bg-color:red;@color:solid){
+    border: 10px @color @bg-color;
+    padding: 20px;
+    background-color: @color;
+}
+
+h1{
+    .border();
+    border-radius: 20px;
+}
+
+h2{
+    .border(blue,dotted);
+}

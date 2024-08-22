@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="demo">
+            
+        </div>
+    </div>
+
+
+<script>
+
+let demo=document.getElementById('demo');
+
+console.log(demo);
+
+fetch('https://dummyjson.com/carts')
+.then((rep)=>{
+    return rep.json()
+})
+.then((rep)=>{
+    for(let ab of rep.carts){
+        // let data=`id :-${ab.id}`
+        // demo.innerHTML+=data
+        // console.log(ab);
+    //    console.log(ab.products);
+       let produ=ab.products;
+console.log(produ);
+
+       for(let pro of produ){
+        console.log(pro);
+        
+        let all=` 
+         <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                <img src="${pro.thumbnail}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${pro.id}</h5>
+                   <p class="card-text">${pro.price}</p>
+                  <p class="card-text">${pro.title}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+                    </div>`
+       
+        // demo.innerHTML+=all;
+        demo.insertAdjacentHTML("beforeend",all)
+       }
+       
+     
+        
+    }
+    
+})
+</script>
+
+</body>
+</html>

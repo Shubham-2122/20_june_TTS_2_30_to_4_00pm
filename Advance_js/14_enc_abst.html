@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- data hide 
+    privte access -->
+
+    <script>
+        function Person(name, age) {
+
+            // private pin
+            let _name = name;
+            let _age = age;
+
+            // get absctr
+            this.getname = function () {
+                return _name;
+            }
+
+            // pin view
+            this.getage = function () {
+                return _age;
+            }
+
+            // set ppin chnage
+            this.setage = function(newage){
+                if(newage > 18){
+                    _age = newage
+                }
+                else{
+                    console.log("not valid")
+                }
+            }
+        }
+        var akhst = new Person("shjh",23)
+        console.log(akhst.getname()._name)
+        console.log(akhst.getname())
+        console.log(akhst.getage())
+        console.log(akhst.setage(26)) //26
+        console.log(akhst.getage())
+        // console.log(akhst.getname("sadhj"))
+        // console.log(akhst.getage(23))
+        // console.log(akhst.setage(24))
+        // console.log(akhst.getage())
+
+
+    </script>
+</body>
+
+</html>

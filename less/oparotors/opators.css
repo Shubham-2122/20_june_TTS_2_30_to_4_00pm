@@ -1,0 +1,10 @@
+h1 {
+  font-size: clamp(20px, 15vw, 100px);
+  background-color: red;
+}
+h1::after {
+  content: "h1";
+}
+h1:hover {
+  background-color: lawngreen;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Artih{
+            x = function add(){
+                // data memeber
+                var x = 20,y=10;
+                document.write("sum=>",x+y,"<br>")
+            }
+            y = function sub(a,b){
+                document.write("sub=>",a-b,"<br>")
+            }
+            c = function mul(a,b){
+                document.write("mul=>",a*b,"<br>")
+            }
+            d = function div(a,b){
+                document.write("div=>",a/b,"<br>")
+            }
+        }
+        var obj = new Artih
+        obj.x()
+        obj.x()
+        obj.y(40,20)
+        obj.y(10,10)
+        obj.d(40,2)
+
+
+    </script>
+</body>
+</html>
